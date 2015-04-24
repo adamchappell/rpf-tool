@@ -1,0 +1,30 @@
+adamc@VirtualSRX> op rpf-tool 
+Interface RPF analysis/configuration tool
+   Flags: + eligible, - ineligible, * running, ! excluded
+  Interface      Instance     Description              Address/Config
+! ge-0/0/0.0                  CST 10M FOOB1/CPE/12345  
++ ge-0/0/1.1                  CST 10M FOOB1/CPE/10001  inet 10.0.1.1/24 
++ ge-0/0/1.2                  CST 10M FOOB1/CPE/10002  inet6 fd00:0001::1/64 
++ ge-0/0/1.3                  CST 10M FOOB1/CPE/10003  inet 10.0.3.1/24 inet6 fd00:0003::1/64 
++ ge-0/0/1.4                  CST 10M FOOB1/CPE/10004  inet 10.0.4.1/24 inet 10.1.4.1/24 inet 10.2.4.1/24 inet6 fd00:0004::1/64 inet6 fd00:0104::1/64 inet6 fd00:0204::1/64 
++ ge-0/0/1.5     VPN-1        CST 10M FOOB1/CPE/10005  inet 10.0.5.1/24 
++ ge-0/0/1.6     VPN-1        CST 10M FOOB1/CPE/10006  inet6 fd00:0006::1/64 
++ ge-0/0/1.7     VPN-1        CST 10M FOOB1/CPE/10007  inet 10.0.7.1/24 inet6 fd00:0007::1/64 
++ ge-0/0/1.8     VPN-1        CST 10M FOOB1/CPE/10008  inet 10.0.8.1/24 inet 10.1.8.1/24 inet 10.2.8.1/24 inet6 fd00:0008::1/64 inet6 fd00:0108::1/64 inet6 fd00:0208::1/64 
+- ge-0/0/1.9                  CST 10M FOOB1/CPE/10009  inet 10.0.9.1/24 OSPF 
+- ge-0/0/1.10                 CST 10M FOOB1/CPE/10010  inet6 fd00:000a::1/64 OSPF 
+- ge-0/0/1.11                 CST 10M FOOB1/CPE/10011  inet 10.0.11.1/24 inet6 fd00:000b::1/64 OSPF 
+- ge-0/0/1.12                 CST 10M FOOB1/CPE/10012  inet 10.0.12.1/24 inet 10.1.12.1/24 inet 10.2.12.1/24 inet6 fd00:000c::1/64 inet6 fd00:010c::1/64 inet6 fd00:020c::1/64 OSPF 
+- ge-0/0/1.13    VPN-2        CST 10M FOOB1/CPE/10013  inet 10.0.13.1/24 OSPF 
+- ge-0/0/1.14    VPN-2        CST 10M FOOB1/CPE/10014  inet6 fd00:000e::1/64 OSPF 
+- ge-0/0/1.15    VPN-2        CST 10M FOOB1/CPE/10015  inet 10.0.15.1/24 inet6 fd00:000f::1/64 OSPF 
+- ge-0/0/1.16    VPN-2        CST 10M FOOB1/CPE/10016  inet 10.0.16.1/24 inet 10.1.16.1/24 inet 10.2.16.1/24 inet6 fd00:0010::1/64 inet6 fd00:0110::1/64 inet6 fd00:0210::1/64 OSPF 
+- ge-0/0/1.17                 CST 10M FOOB1/CPE/10017  inet 10.0.17.1/24 BGP 
++ ge-0/0/1.18                 CST 10M FOOB1/CPE/10018  inet6 fd00:0012::1/64 
+- ge-0/0/1.19                 CST 10M FOOB1/CPE/10019  inet 10.0.19.1/24 inet6 fd00:0013::1/64 BGP 
+- ge-0/0/1.20                 CST 10M FOOB1/CPE/10020  inet 10.0.20.1/24 inet 10.1.20.1/24 inet 10.2.20.1/24 inet6 fd00:0014::1/64 inet6 fd00:0114::1/64 inet6 fd00:0214::1/64 BGP 
+- ge-0/0/1.21    VPN-3        CST 10M FOOB1/CPE/10021  inet 10.0.21.1/24 BGP 
++ ge-0/0/1.22    VPN-3        CST 10M FOOB1/CPE/10022  inet6 fd00:0016::1/64 
+- ge-0/0/1.23    VPN-3        CST 10M FOOB1/CPE/10023  inet 10.0.23.1/24 inet6 fd00:0017::1/64 BGP 
+- ge-0/0/1.24    VPN-3        CST 10M FOOB1/CPE/10024  inet 10.0.24.1/24 inet 10.1.24.1/24 inet 10.2.24.1/24 inet6 fd00:0018::1/64 inet6 fd00:0118::1/64 inet6 fd00:0218::1/64 BGP 
+! lo0.0                                                inet 127.0.0.1/32 inet 10.255.0.1/32 
