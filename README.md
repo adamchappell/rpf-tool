@@ -1,4 +1,4 @@
-## rpf-tool
+# rpf-tool
 
 Juniper JUNOS SLAX op script to assess a system's network interfaces and
 determine which ones might be appropriate to run the rpf-check feature in
@@ -8,7 +8,7 @@ Tool checks interface to ensure it is free of routing protocol that might cause
 asymmetry and reports. Additionally, tool can apply and remove RPF either to
 all eligible interfaces, or on a one-by-one basis.
 
-# Example usage
+## Example usage
 
 Assess/audit interfaces to check for suitability of RPF:
 
@@ -81,12 +81,15 @@ Scope operation to nominated interface:
 
 Enforce exclusions by including the text *{ no-rpf }* in the description
 
-# Caveats
+## Caveats
 
 * Interfaces carrying multi-hop EBGP not currently detected.
 * Interfaces carrying IBGP not detected, but typically these also
   run an IGP which is detected.
+* Be aware of Juniper PR 873709: disabling RPF on an interface will
+  break forwarding on other interfaces that share a common value for
+  ifl index && 65536. Remedy: remove RPF and re-apply on affected interface
 
-Also included:
+## Other documents:
 - test configuration file from Juniper Firefly
 - test outputs
