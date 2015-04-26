@@ -79,7 +79,7 @@ Scope operation to nominated interface:
 	Apply RPF to interface: ge-0/0/0.0: 0 inet, 0 inet6
 	No affected interfaces: configuration not applied
 
-Enforce exclusions by include the text *no-rpf* in the description
+Enforce exclusions by including the text *{ no-rpf }* in the description
 
 # Caveats
 
