@@ -8,6 +8,8 @@ Tool checks interface to ensure it is free of routing protocol that might cause
 asymmetry and reports. Additionally, tool can apply and remove RPF either to
 all eligible interfaces, or on a one-by-one basis.
 
+[Background information and motivation] (http://blog.packetsource.net/2015/04/24/preventing-ddos-using-junipers-slax-on-mx-960)
+
 ## Example usage
 
 Assess/audit interfaces to check for suitability of RPF:
@@ -93,3 +95,4 @@ Enforce exclusions by including the text *{ no-rpf }* in the description
 ## Other documents:
 - test configuration file from Juniper Firefly
 - test outputs
+
