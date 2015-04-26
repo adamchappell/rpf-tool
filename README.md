@@ -85,7 +85,7 @@ Enforce exclusions by including the text *{ no-rpf }* in the description
 
 ## Caveats
 
-* Interfaces carrying multi-hop EBGP not currently detected.
+* Interfaces carrying multi-hop EBGP not currently detected. (Ordinary direct neighbour EBGP is fine).
 * Interfaces carrying IBGP not detected, but typically these also
   run an IGP which is detected.
 * Be aware of Juniper PR 873709: disabling RPF on an interface will
