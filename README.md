@@ -90,7 +90,7 @@ Enforce exclusions by including the text *{ no-rpf }* in the description
   run an IGP which is detected.
 * Be aware of Juniper PR 873709: disabling RPF on an interface will
   break forwarding on other interfaces that share a common value for
-  ifl index && 65536. Remedy: remove RPF and re-apply on affected interface
+  ifl index && 65535. Remedy: remove RPF and re-apply on affected interface
 
 ## Other documents:
 - test configuration file from Juniper Firefly
